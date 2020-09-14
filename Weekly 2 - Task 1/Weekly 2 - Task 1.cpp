@@ -25,8 +25,6 @@
 */
 
 #include <iostream>
-#include <string>
-
 
 int i = 1;
 int l = l+5;
@@ -35,9 +33,9 @@ int option = 0;
 
 int main()
 {
-    std::cout << "\t\t\t\t\t Test Menu\n\n";
+    std::cout << "\t\t\t\t\t Weekly 2 - Tasks 1-5\n\n";
 
-    std::cout << "Please pick an option using numbers 1-6" << std::endl;
+    std::cout << "Please pick a program you want to execute using numbers 1-7" << std::endl;
 
     do{
             std::cout <<
@@ -49,19 +47,23 @@ int main()
                 "\t5. Print 5 to 50 in steps of 5 using a for loop\n"
                 "\t6. Print 5 to 50 in steps of 5 using a do while loop\n"
                 "\t7. Exit the program\n"
-                "Choose an option option using numbers 1-7:  ";
+                "Choose an option using numbers 1-7:  ";
             std::cin >> option;
+
             switch (option) {
+            
             case 1:
                 while (i < 101) {
                     std::cout << i << std::endl; i++;
                 }
                 break;
+           
             case 2:
                 for (int j = 1; j < 101; j++) {
                     std::cout << j << std::endl;
                 }
                 break;
+            
             case 3:
                 for (int k = 100; k >= 1; k--) {
                     std::cout << k << std::endl;
@@ -73,11 +75,13 @@ int main()
                     std::cout << l << std::endl; l += 5;
                 }
                 break;
+            
             case 5:
                 for (int m = 5; m < 51; m += 5) {
                     std::cout << m << std::endl;
                 }
                 break;
+           
             case 6:
                 int ix = 5;
                 do {
@@ -89,7 +93,9 @@ int main()
     } while (option < 7 && option > 0);
     
 }
-    //Task 1 - 1//
+    
+
+//Task 1 - 1//
     /* 
     int i = 1;
     while (i < 101) {
@@ -97,30 +103,30 @@ int main()
     }
     */
 
-     //Task 1-2//
+//Task 1-2//
   /*  for (int j = 1; j < 101; j++) {
         std::cout << j << std::endl;
     }*/
     
 
-    //Task 2//
+//Task 2//
      /*while (k >= 1) {
          std::cout << k << std::endl; k--;
     }
     */
 
-    //Task 3//
+//Task 3//
    /* while (l < 51) {
         std::cout << l << std::endl; l+=5;
     }
    */
 
-    //Task 4//
-    //for (int m = 5; m < 51; m+=5){
-    //    std::cout << m << std::endl;
-    //}
+//Task 4//
+    /*for (int m = 5; m < 51; m+=5){
+        std::cout << m << std::endl;
+    }*/
 
-    //Task 5//
+//Task 5//
     /*int ix = 5;
     do {
         std::cout << ix << std::endl;
